@@ -1,0 +1,21 @@
+{
+  "name": "interactive_ripple_effect",
+  "version": "1.0.0",
+  "description": "interactive ripple effecct for html background",
+  "main": "build/index.umd.min.js",
+  "scripts": {
+    "build:main": "webpack --copy-files --out-dir dist --ignore *.test.js src",
+    "build:umd":"webpack --output-filename index.umd.js",
+    "build:umd.min":"webpack --output-filename index.umd.min.js --mode production",
+    "help": "webpack --help"
+  },
+  "author": "houa cha",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
+    "webpack": "^5.64.2",
+    "webpack-cli": "^4.9.1"
+  }
+}
